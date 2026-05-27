@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Aroma</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles2.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img
+          height="50"
+          width="50"
+          src="images/cup-of-coffee.svg"
+          alt="Logo cafe aroma"
+        />
+      </a>
+
+      <ul class="Menu-Horizontal">
+        <li><a href="">Menú</a></li>
+        <li>
+          <a href="">Productos</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">Cafes</a></li>
+            <li><a href="">Tes</a></li>
+            <li><a href="">Postres</a></li>
+            <li><a href="">Snacks</a></li>
+          </ul>
+        </li>
+        <li><a href="pagina2.html">Reservas</a></li>
+        <li><a href="#contactanos">Contáctanos</a></li>
+      </ul>
+    </nav>
+
+    <section class="seccion-creditos">
+      <div class="cont-gral-creditos">
+        <div class="cont-cred-texto">
+          <h2>Seccion Menu</h2>
+          <p>
+            En <strong> cafe aroma</strong> ofrecemmos una experiencia unica en
+            cada taza. Nuestro menú combina granos seleccionados de distintas
+            regiones, logrando aromas etc....
+          </p>
+          <p>
+            Desde el clásico café hasta el latte vainilla, te chai, cada bebida
+            es preparadas por baristas apasionados que buscan brindarte un
+            momento de pausa.
+          </p>
+        </div>
+        <div class="cont-cred-img">
+          <img src="images/cafe1.jpeg" alt="tazas de cafe aroma" />
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-productos">
+      <div class="cont-gral-productos">
+        <div class="cont-seg-texto">
+          <h2>Seccion Productos</h2>
+          <p>
+            Disfruta de nuestra amplia variedad de cafes, tes, postres
+            artesanales. Trabajamos con insumos frescos, organicos de origen
+            sistenible. Nuestros productos son elaborados cada mañana para
+            garantizar.....
+          </p>
+          <p>
+            También puedes acompañar tu bebida con deliciosos croissants,
+            brownies y tartas. Si deseas conocer más sobre nuestro proceso de
+            tostado, contáctanos directamente.
+          </p>
+          <button>Leer mas...</button>
+        </div>
+
+        <div class="cont-seg-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/j5yf2X55r0Y?si=gmU9iDdULp5Vk9OY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-formulario" id="contactanos">
+      <div class="cont-gral-formulario">
+        <h2>Formulario de Reservas</h2>
+        <p>
+          Complete todos los datos para reservar su mesa o solicitar más
+          información
+        </p>
+
+        <form class="formulario" id="contactForm">
+          <div class="campo">
+            <label for="nombre"> Nombres Completos: </label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese su nombre"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="pais"> País:</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un país</option>
+              <option value="Perú">Perú</option>
+              <option value="México">México</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Chile">Chile</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label> Prefencias: </label>
+            <ul class="lista-checkbox">
+              <li>
+                <label>
+                  <input type="checkbox" name="intereses" value="Café" /> Café
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="intereses" value="Té" /> Té
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="intereses" value="Postres" />
+                  Postres
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="campo">
+            <label> Tipo de reservar:</label>
+            <ul class="lista-radio">
+              <li>
+                <label>
+                  <input type="radio" name="reserva" value="individual" />
+                  Individual
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="reserva" value="grupal" /> grupal
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="seccion-footer">
+      <div class="cont-gral-footer">
+        <div class="footer-info">
+          <h3>Acerca de nosotros</h3>
+          <p>
+            En <strong>Cafe Aroma</strong> celebramos la pasión por el buen
+            cafe, la amistad y los momentos compartidos. Ubicados en Lima,
+            ofrecemos un espacion cálido y moderno para disfrutar de bebidas y
+            postres.
+          </p>
+          <p>&copy; 2026 Cafe Aroma. Todos los derechos reservados</p>
+        </div>
+
+        <div class="footer-redes">
+          <h3>Nuestras redes</h3>
+          <ul class="lista-redes">
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Tiktok</a></li>
+            <li><a href="">Twitter</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-politica">
+          <h3>Politicas y Privacidad</h3>
+          <ul class="lista-proteccion">
+            <li><a href="documentos/LeyProt.pdf">Proteccion de Datos</a></li>
+            <li><a href="">Politica de cookies</a></li>
+            <li><a href="">Términos de Servicio</a></li>
+            <li><a href="">Aviso Legal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Síguenos</h4>
+          <a href="#">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+              alt="Facebook"
+              class="social-icon"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+              alt="Instagram"
+              class="social-icon"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt="LinkedIn"
+              class="social-icon"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+              alt="xtwitter"
+              class="social-icon"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
